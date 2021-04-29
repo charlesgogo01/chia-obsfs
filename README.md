@@ -19,8 +19,11 @@ https://support.huaweicloud.com/qs-evs/evs_01_0033.html
 #for example
 
 fdisk /dev/vdb
+
 partprobe
+
 mkfs -t ext4 /dev/vdb1
+
 mount /dev/vdb1 /mnt/ssd0
 
 # Step3. configure obsfs
