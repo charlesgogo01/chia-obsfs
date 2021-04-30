@@ -40,8 +40,9 @@ mkdir /mnt/obsfs
 
 #configure /etc/obsfsconfig,the content like this:
 
- **case 1 do plot task,the ECS mem must be save 4GB/4 tasks for obsfs,this config as "max_cache_mem_size_mb" **
- **case 2 do harvests task,the ECS mem must be save 12GB for obsfs,this config as "max_cache_mem_size_mb" **
+ **case 1 do plot task,the ECS mem must be save 4GB/4 tasks for obsfs,this config as "max_cache_mem_size_mb"**
+ 
+ **case 2 do harvester task,the ECS mem must be save 12GB for obsfs,this config as "max_cache_mem_size_mb"**
 
 ```
 
