@@ -39,13 +39,26 @@ mkdir /mnt/ssd0/temp/
 mkdir /mnt/obsfs
 
 #configure /etc/obsfsconfig,the content like this:
-cat /etc/obsfsconfig 
+
+ **the ECS mem must be save 4GB/4 tasks for obsfs,this config as max_cache_mem_size_mb**
+
+```
+
 dbglogmode=1
+
 dbglevel=warn
+
 fuse_intf_log_level=3
+
 cache_attr_switch_open=1
+
 cache_attr_valid_ms=600000
+
 mining_local_fs_cache_path=/mnt/ssd0/temp/
+
+max_cache_mem_size_mb=4096
+
+```
 
 # Step4. run obsfs
 #command format:
